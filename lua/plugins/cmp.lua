@@ -5,7 +5,7 @@ return {
     ---@param opts cmp.ConfigSchema
     opts = function(_, opts)
       -- Setup cmp-emoji as a cmp source
-      table.insert(opts.sources, { name = "emoji" })
+      -- table.insert(opts.sources, { name = "emoji" })
 
       local has_words_before = function()
         unpack = unpack or table.unpack
