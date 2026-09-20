@@ -9,3 +9,12 @@ vim.api.nvim_create_autocmd("BufWritePre", {
     vim.lsp.buf.format()
   end,
 })
+
+-- Janet autoformat
+vim.api.nvim_create_autocmd("BufWritePre", {
+  pattern = { "*.janet" },
+  callback = function(ev)
+    vim.cmd("silent !janet-format %")
+    vim.cmd("edit")
+  end,
+})
