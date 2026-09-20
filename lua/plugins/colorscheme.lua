@@ -1,4 +1,7 @@
 return {
+  -- add ayu
+  { "Shatur/neovim-ayu" },
+
   -- add nord
   { "shaunsingh/nord.nvim" },
 
@@ -22,7 +25,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin",
+      colorscheme = "ayu",
     },
   },
 }
