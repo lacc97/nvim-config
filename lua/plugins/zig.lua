@@ -9,10 +9,11 @@ return {
 
   {
     "neovim/nvim-lspconfig",
-    dependencies = { "williamboman/mason.nvim", "ziglang/zig.vim" },
+    dependencies = { "mason-org/mason.nvim", "ziglang/zig.vim" },
     opts = {
       servers = {
         zls = {
+          mason = false,
           semantic_tokens = "partial",
         },
       },
